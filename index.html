@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+
+    <!-- Tailwind CSS -->
+    <script src="./js/tailwind.js"></script>
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <h1 class="text-5xl text-center font-bold text-sky-500 mt-10">Money Master</h1>
+    </header>
+
+    <main>
+        <section class="container mx-auto mt-10 ">
+            <div class="grid md:grid-cols-2">
+                <div class="w-full mx-auto font-bold">
+                    <div class="w-3/4">
+                    <!-- Income Section -->
+                    <div class="text-center">
+                        <h1 class="text-xl my-5 text-center">Income</h1>
+                        <label for="" class="block text-right">Income: <input type="text" class="bg-gray-200 p-1 text-center" value="10000"></label>
+                    </div>
+
+                    <!-- Expenses Section -->
+                    <div class="text-center my-5">
+                        <h1 class="text-xl my-5 ">Expanses</h1>
+                        <label class="block text-right" for="">Food: <input type="text" class="bg-gray-200 p-1 my-3 text-center"
+                                value="3000"></label>
+                        <label class="block text-right" for="">Rent: <input type="text" class="bg-gray-200 p-1  my-3 text-center"
+                                value="2000"></label>
+                        <label class="block text-right"  for="">Clothes: <input type="text" class="bg-gray-200 p-1  my-3 text-center"
+                                value="500"></label>
+                    </div>
+
+                    <!-- Calculate Section -->
+                    <div class="flex gap-10 items-center justify-center float-right">
+                        <button
+                            class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-5 py-2">Calculate</button>
+                        <button
+                            class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-7 py-2">Reset</button>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full mx-auto text-center font-bold">
+                    <div class="w-3/4 mx-auto">
+                        <!-- Balance Section -->
+                        <div class="my-5 text-2xl">
+                            <h1>Total Expanses : <span>5500</span></h1>
+                            <h1>Balance: <span>4500</span></h1>
+                        </div>
+                        <!-- Saving Section -->
+                        <div>
+                            <div>
+                                <label class="w-1/2" for="">Save: <input type="text" class="bg-gray-200 p-1 w-20 my-3 text-center"
+                                        value="20"></label> <label class="w-1/2" for=""><span>%</span> <button
+                                        class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-5 py-2">Save</button></label>
+                            </div>
+
+                            <div class="mt-20  text-2xl">
+                                <h1>Saving Amount: <span>2000</span></h1>
+                                <h1>Remaining Balance: <span>2500</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- script  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
