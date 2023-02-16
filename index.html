@@ -13,7 +13,7 @@
 
 <body>
     <header class="container mx-auto">
-        <h1 class="text-5xl text-center font-bold text-sky-500 mt-10">Money Master</h1>
+        <h1 class="text-5xl text-center font-bold text-sky-500 mt-10">Money Master!!!</h1>
     </header>
 
     <main>
@@ -24,25 +24,25 @@
                     <!-- Income Section -->
                     <div class="text-center">
                         <h1 class="text-xl my-5 text-center">Income</h1>
-                        <label for="" class="block text-right">Income: <input type="text" class="bg-gray-200 p-1 text-center" value="10000"></label>
+                        <label for="" class="block text-right">Income: <input id="income-field" type="text" class="bg-gray-200 p-1 text-center" value="10000"></label>
                     </div>
 
                     <!-- Expenses Section -->
                     <div class="text-center my-5">
                         <h1 class="text-xl my-5 ">Expanses</h1>
-                        <label class="block text-right" for="">Food: <input type="text" class="bg-gray-200 p-1 my-3 text-center"
+                        <label class="block text-right" for="">Food: <input id="food-expanses-field" type="text" class="bg-gray-200 p-1 my-3 text-center"
                                 value="3000"></label>
-                        <label class="block text-right" for="">Rent: <input type="text" class="bg-gray-200 p-1  my-3 text-center"
+                        <label class="block text-right" for="">Rent: <input id="rent-expanses-field" type="text" class="bg-gray-200 p-1  my-3 text-center"
                                 value="2000"></label>
-                        <label class="block text-right"  for="">Clothes: <input type="text" class="bg-gray-200 p-1  my-3 text-center"
+                        <label class="block text-right"  for="">Clothes: <input id="clothes-expanses-field" type="text" class="bg-gray-200 p-1  my-3 text-center"
                                 value="500"></label>
                     </div>
 
                     <!-- Calculate Section -->
                     <div class="flex gap-10 items-center justify-center float-right">
-                        <button
+                        <button id="calculate-btn"
                             class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-5 py-2">Calculate</button>
-                        <button
+                        <button id="reset-btn"
                             class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-7 py-2">Reset</button>
                     </div>
                 </div>
@@ -51,20 +51,20 @@
                     <div class="w-3/4 mx-auto">
                         <!-- Balance Section -->
                         <div class="my-5 text-2xl">
-                            <h1>Total Expanses : <span>5500</span></h1>
-                            <h1>Balance: <span>4500</span></h1>
+                            <h1>Total Expanses : <span id="total-expanses">5500</span></h1>
+                            <h1>Balance: <span id="total-balance">4500</span></h1>
                         </div>
                         <!-- Saving Section -->
                         <div>
                             <div>
-                                <label class="w-1/2" for="">Save: <input type="text" class="bg-gray-200 p-1 w-20 my-3 text-center"
-                                        value="20"></label> <label class="w-1/2" for=""><span>%</span> <button
+                                <label class="w-1/2" for="">Save: <input id="saving-rate-field" type="text" class="bg-gray-200 p-1 w-20 my-3 text-center"
+                                        value="20"></label> <label class="w-1/2" for=""><span>%</span> <button id="saving-btn"
                                         class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-5 py-2">Save</button></label>
                             </div>
 
                             <div class="mt-20  text-2xl">
-                                <h1>Saving Amount: <span>2000</span></h1>
-                                <h1>Remaining Balance: <span>2500</span></h1>
+                                <h1>Saving Amount: <span id="total-saving">2000</span></h1>
+                                <h1>Remaining Balance: <span id="remainning-balance">2500</span></h1>
                             </div>
                         </div>
                     </div>
