@@ -18,10 +18,10 @@
     </header>
 
     <main>
-        <section class="container mx-auto mt-10 py-10">
-            <div class="grid md:grid-cols-2">
+        <section class="container mx-auto py-5">
+            <div class="grid md:grid-cols-2 mx-auto">
                 <div class="w-full mx-auto font-bold">
-                    <div class="w-3/4">
+                    <div class="md:w-3/4 pr-10 mx-auto">
                     <!-- Income Section -->
                     <div class="text-center">
                         <h1 class="text-xl my-5 text-center">Income</h1>
@@ -37,14 +37,6 @@
                                 value="2000"></label>
                         <label class="block text-right"  for="">Clothes: <input id="clothes-expanses-field" type="text" class="bg-gray-200 p-1  my-3 text-center"
                                 value="500"></label>
-                    </div>
-
-                    <!-- Calculate Section -->
-                    <div class="flex gap-10 items-center justify-center float-right">
-                        <button id="calculate-btn"
-                            class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-5 py-2">Calculate</button>
-                        <button id="reset-btn"
-                            class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-7 py-2">Reset</button>
                     </div>
                 </div>
                 </div>
@@ -72,9 +64,24 @@
                 </div>
             </div>
         </section>
+
+        <!-- Calculate Section -->
+        <section class="container mx-auto p-5">
+            <div class="grid grid-cols-2 gap-5 align-center w-full mx-auto">
+                <div class="md:w-1/2 mx-auto">
+                    <button id="calculate-btn"
+                        class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-5 py-2 w-full" >Calculate</button>
+                    </div>
+                    <div class="md:w-1/2 mx-auto">
+                        <button id="reset-btn"
+                                    class="bg-sky-500  hover:bg-pink-500 text-white font-semibold text-base rounded-lg px-7 py-2 w-full">Reset</button>
+                    </div>
+            </div>
+        </section>
     </main>
 
     <!-- script  -->
+    <script src="./js/utilities.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
